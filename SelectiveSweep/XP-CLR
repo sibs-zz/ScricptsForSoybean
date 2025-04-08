@@ -1,0 +1,21 @@
+#Only part was shown as an example
+xpclr --out zhongguoallvsbaxi_chr1 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 1 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
+xpclr --out zhongguoallvsbaxi_chr2 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 2 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
+xpclr --out zhongguoallvsbaxi_chr3 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 3 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
+xpclr --out zhongguoallvsbaxi_chr4 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 4 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
+xpclr --out zhongguoallvsbaxi_chr5 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 5 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
+xpclr --out zhongguoallvsbaxi_chr6 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 6 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
+xpclr --out zhongguoallvsbaxi_chr7 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 7 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
+xpclr --out zhongguoallvsbaxi_chr8 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 8 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
+xpclr --out zhongguoallvsbaxi_chr9 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 9 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
+xpclr --out zhongguoallvsbaxi_chr10 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 10 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
+xpclr --out zhongguoallvsbaxi_chr11 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 11 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
+xpclr --out zhongguoallvsbaxi_chr12 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 12 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
+xpclr --out zhongguoallvsbaxi_chr13 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 13 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
+xpclr --out zhongguoallvsbaxi_chr14 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 14 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
+xpclr --out zhongguoallvsbaxi_chr15 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 15 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
+xpclr --out zhongguoallvsbaxi_chr16 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 16 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
+xpclr --out zhongguoallvsbaxi_chr17 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 17 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
+xpclr --out zhongguoallvsbaxi_chr18 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 18 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
+xpclr --out zhongguoallvsbaxi_chr19 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 19 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
+xpclr --out zhongguoallvsbaxi_chr20 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 20 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
