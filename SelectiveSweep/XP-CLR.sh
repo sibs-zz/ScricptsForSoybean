@@ -19,3 +19,32 @@ xpclr --out zhongguoallvsbaxi_chr17 -Sa zhongguo_all_cultivar.list -Sb baxi_cult
 xpclr --out zhongguoallvsbaxi_chr18 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 18 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
 xpclr --out zhongguoallvsbaxi_chr19 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 19 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
 xpclr --out zhongguoallvsbaxi_chr20 -Sa zhongguo_all_cultivar.list -Sb baxi_cultivar.list  --input 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --chr 20 --ld 0.95 --maxsnps 1000 --size 100000 --step 100000
+
+head -1 zhongguoallvsbaxi_chr1 > zhongguoallvsbaxi_chrall
+grep -v xpclr zhongguoallvsbaxi_chr1 >> zhongguoallvsbaxi_chrall
+grep -v xpclr zhongguoallvsbaxi_chr2 >> zhongguoallvsbaxi_chrall
+grep -v xpclr zhongguoallvsbaxi_chr3 >> zhongguoallvsbaxi_chrall
+grep -v xpclr zhongguoallvsbaxi_chr4 >> zhongguoallvsbaxi_chrall
+grep -v xpclr zhongguoallvsbaxi_chr5 >> zhongguoallvsbaxi_chrall
+grep -v xpclr zhongguoallvsbaxi_chr6 >> zhongguoallvsbaxi_chrall
+grep -v xpclr zhongguoallvsbaxi_chr7 >> zhongguoallvsbaxi_chrall
+grep -v xpclr zhongguoallvsbaxi_chr8 >> zhongguoallvsbaxi_chrall
+grep -v xpclr zhongguoallvsbaxi_chr9 >> zhongguoallvsbaxi_chrall
+grep -v xpclr zhongguoallvsbaxi_chr10 >> zhongguoallvsbaxi_chrall
+grep -v xpclr zhongguoallvsbaxi_chr11 >> zhongguoallvsbaxi_chrall
+grep -v xpclr zhongguoallvsbaxi_chr12 >> zhongguoallvsbaxi_chrall
+grep -v xpclr zhongguoallvsbaxi_chr13 >> zhongguoallvsbaxi_chrall
+grep -v xpclr zhongguoallvsbaxi_chr14 >> zhongguoallvsbaxi_chrall
+grep -v xpclr zhongguoallvsbaxi_chr15 >> zhongguoallvsbaxi_chrall
+grep -v xpclr zhongguoallvsbaxi_chr16 >> zhongguoallvsbaxi_chrall
+grep -v xpclr zhongguoallvsbaxi_chr17 >> zhongguoallvsbaxi_chrall
+grep -v xpclr zhongguoallvsbaxi_chr18 >> zhongguoallvsbaxi_chrall
+grep -v xpclr zhongguoallvsbaxi_chr19 >> zhongguoallvsbaxi_chrall
+grep -v xpclr zhongguoallvsbaxi_chr20 >> zhongguoallvsbaxi_chrall
+
+awk '{print $2,$3,$4,$12}' zhongguoallvsbaxi_chrall |grep -v xpclr|awk '{if(NF==4)print}' > zhongguoallvsbaxi_chrall.t
+python zscore.py zhongguoallvsbaxi_chrall.t zhongguoallvsbaxi_chrall.t.zscore
+awk '{if($5>=1.645) print $1,$2,$3}' zhongguoallvsbaxi_chrall.t.zscore > zhongguoallvsbaxi_chrall.t.zscore.pos
+awk '{if($1<10){print "Chr0"$1,$2,$3}else {print "Chr"$1,$2,$3}}' zhongguoallvsbaxi_chrall.t.zscore.pos > zhongguoallvsbaxi_chrall.t.zscore.pos.t
+python GetGeneFromGFF.py ZH13.gene.gff zhongguoallvsbaxi_chrall.t.zscore.pos.t zhongguoallvsbaxi_chrall.t.zscore.pos.t.gene
+awk '{print $9}' zhongguoallvsbaxi_chrall.t.zscore.pos.t.gene|grep -v attr|sed s/ID=//g|sed s/\;//g |sort -u > zhongguoallvsbaxi_chrall.t.zscore.pos.t.gene.clean
