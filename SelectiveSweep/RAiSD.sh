@@ -1,9 +1,5 @@
 #Only part was shown as an example
 ./raisd-master/bin/release/RAiSD -n baxi_cultivar_990w.list -I 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf -R -A 0.95 -S baxi_cultivar.list -f
-./raisd-master/bin/release/RAiSD -n chaoxian_cultivar_990w.list -I 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf -R -A 0.95 -S chaoxian_cultivar.list -f
-./raisd-master/bin/release/RAiSD -n chaoxian_landrace_990w.list -I 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf -R -A 0.95 -S chaoxian_landrace.list -f
-./raisd-master/bin/release/RAiSD -n chaoxian_soja_990w.list -I 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf -R -A 0.95 -S chaoxian_soja.list -f
-./raisd-master/bin/release/RAiSD -n dongnanya_cultivar_990w.list -I 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf -R -A 0.95 -S dongnanya_cultivar.list -f
 
 awk '{printf "%.3f %.3f %.3f\n", $2,$3,$7}' RAiSD_Report.baxi_cultivar_990w.list.1 |awk '{print 1,$0}' > RAiSD_Report.baxi_cultivar_990w.list.all
 awk '{printf "%.3f %.3f %.3f\n", $2,$3,$7}' RAiSD_Report.baxi_cultivar_990w.list.2 |awk '{print 2,$0}' >> RAiSD_Report.baxi_cultivar_990w.list.all
