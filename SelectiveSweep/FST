@@ -1,0 +1,8 @@
+#Only part was shown as an example
+nohup vcftools --vcf 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --weir-fst-pop zhongguo_all_cultivar.list --weir-fst-pop baxi_cultivar.list --out zhongguoallvsbaxi --fst-window-size 100000 --fst-window-step 10000 &
+nohup vcftools --vcf 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --weir-fst-pop zhongguo_all_cultivar.list --weir-fst-pop chaoxian_cultivar.list --out zhongguoallvschaoxian --fst-window-size 100000 --fst-window-step 10000 &
+nohup vcftools --vcf 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --weir-fst-pop zhongguo_all_cultivar.list --weir-fst-pop eluosi_cultivar.list --out zhongguoallvseluosi --fst-window-size 100000 --fst-window-step 10000 &
+nohup vcftools --vcf 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --weir-fst-pop zhongguo_all_cultivar.list --weir-fst-pop jianada_cultivar.list --out zhongguoallvsjianada --fst-window-size 100000 --fst-window-step 10000 &
+nohup vcftools --vcf 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --weir-fst-pop zhongguo_all_cultivar.list --weir-fst-pop meiguo_cultivar.list --out zhongguoallvsmeiguo --fst-window-size 100000 --fst-window-step 10000 &
+nohup vcftools --vcf 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --weir-fst-pop zhongguo_all_cultivar.list --weir-fst-pop ouzhou_cultivar.list --out zhongguoallvsouzhou --fst-window-size 100000 --fst-window-step 10000 &
+nohup vcftools --vcf 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --weir-fst-pop zhongguo_all_cultivar.list --weir-fst-pop riben_cultivar.list --out zhongguoallvsriben --fst-window-size 100000 --fst-window-step 10000 &
