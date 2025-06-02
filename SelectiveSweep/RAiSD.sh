@@ -23,7 +23,7 @@ awk '{printf "%.3f %.3f %.3f\n", $2,$3,$7}' RAiSD_Report.baxi_cultivar_990w.list
 awk '{printf "%.3f %.3f %.3f\n", $2,$3,$7}' RAiSD_Report.baxi_cultivar_990w.list.20 |awk '{print 20,$0}' >> RAiSD_Report.baxi_cultivar_990w.list.all
 
 python zscore.py RAiSD_Report.baxi_cultivar_990w.list.all RAiSD_Report.baxi_cultivar_990w.list.all.zscore
-awk '{if($5>=1.645) print $1,$2,$3}' RAiSD_Report.baxi_cultivar_990w.list.all.zscore > RAiSD_Report.baxi_cultivar_990w.list.all.zscore.pos
+awk '{if($5>=1.96) print $1,$2,$3}' RAiSD_Report.baxi_cultivar_990w.list.all.zscore > RAiSD_Report.baxi_cultivar_990w.list.all.zscore.pos
 awk '{if($1<10){print "Chr0"$1,$2,$3}else {print "Chr"$1,$2,$3}}' RAiSD_Report.baxi_cultivar_990w.list.all.zscore.pos > RAiSD_Report.baxi_cultivar_990w.list.all.zscore.pos.t
 python GetGeneFromGFF.py ZH13.gene.gff RAiSD_Report.baxi_cultivar_990w.list.all.zscore.pos.t RAiSD_Report.baxi_cultivar_990w.list.all.zscore.pos.t.gene
 awk '{print $9}' RAiSD_Report.baxi_cultivar_990w.list.all.zscore.pos.t.gene |grep -v attr|sed s/ID=//g|sed s/\;//g |sort -u > RAiSD_Report.baxi_cultivar_990w.list.all.zscore.pos.t.gene.clean
