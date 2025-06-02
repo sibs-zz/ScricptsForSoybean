@@ -44,7 +44,7 @@ grep -v xpclr zhongguoallvsbaxi_chr20 >> zhongguoallvsbaxi_chrall
 
 awk '{print $2,$3,$4,$12}' zhongguoallvsbaxi_chrall |grep -v xpclr|awk '{if(NF==4)print}' > zhongguoallvsbaxi_chrall.t
 python zscore.py zhongguoallvsbaxi_chrall.t zhongguoallvsbaxi_chrall.t.zscore
-awk '{if($5>=1.645) print $1,$2,$3}' zhongguoallvsbaxi_chrall.t.zscore > zhongguoallvsbaxi_chrall.t.zscore.pos
+awk '{if($5>=1.96) print $1,$2,$3}' zhongguoallvsbaxi_chrall.t.zscore > zhongguoallvsbaxi_chrall.t.zscore.pos
 awk '{if($1<10){print "Chr0"$1,$2,$3}else {print "Chr"$1,$2,$3}}' zhongguoallvsbaxi_chrall.t.zscore.pos > zhongguoallvsbaxi_chrall.t.zscore.pos.t
 python GetGeneFromGFF.py ZH13.gene.gff zhongguoallvsbaxi_chrall.t.zscore.pos.t zhongguoallvsbaxi_chrall.t.zscore.pos.t.gene
 awk '{print $9}' zhongguoallvsbaxi_chrall.t.zscore.pos.t.gene|grep -v attr|sed s/ID=//g|sed s/\;//g |sort -u > zhongguoallvsbaxi_chrall.t.zscore.pos.t.gene.clean
