@@ -35,3 +35,5 @@ We include data processing workflows, population genetics analyses, and visualiz
 ## Citation
 Zhou Zhu, Yalin Wang, Shulin Liu, et al.
 Genomic atlas of 8,105 accessions reveals stepwise domestication, global dissemination, and improvement trajectories in soybean
+
+---
