@@ -1,7 +1,5 @@
 # Genomic Atlas of Soybean Domestication and Improvement
 
-![Soybean](https://upload.wikimedia.org/wikipedia/commons/3/3e/Soybean.USDA.jpg)
-
 **Genomic atlas of 8,105 accessions reveals stepwise domestication, global dissemination, and improvement trajectories in soybean**  
 Zhou Zhu¹⁸, Yalin Wang¹⁸, Shulin Liu¹, Shoudong Wang², Juxu Li¹³,  
 Chao Fang¹, Yucheng Liu⁴, Xiaoyue Yang⁵, Dongmei Tian⁶, Shuhui Song⁶⁷, Zhixi Tian¹⁷⁹  
@@ -33,3 +31,7 @@ We include data processing workflows, population genetics analyses, and visualiz
 - Selected genes and haplotypes driving yield and adaptation  
 
 ---
+
+## Citation
+Zhou Zhu, Yalin Wang, Shulin Liu, et al.
+Genomic atlas of 8,105 accessions reveals stepwise domestication, global dissemination, and improvement trajectories in soybean
