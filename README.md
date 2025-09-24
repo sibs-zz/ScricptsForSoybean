@@ -1,8 +1,8 @@
 # Genomic Atlas of Soybean Domestication and Improvement
 
 **Genomic atlas of 8,105 accessions reveals stepwise domestication, global dissemination, and improvement trajectories in soybean**  
-Zhou Zhu¹⁸, Yalin Wang¹⁸, Shulin Liu¹, Shoudong Wang², Juxu Li¹³,  
-Chao Fang¹, Yucheng Liu⁴, Xiaoyue Yang⁵, Dongmei Tian⁶, Shuhui Song⁶⁷, Zhixi Tian¹⁷⁹  
+Zhou Zhu¹ ⁸, Yalin Wang¹ ⁸, Shulin Liu¹, Shoudong Wang², Juxu Li¹ ³,  
+Chao Fang¹, Yucheng Liu⁴, Xiaoyue Yang⁵, Dongmei Tian⁶, Shuhui Song⁶ ⁷, Zhixi Tian¹ ⁷ ⁹  
 
 ¹ Yazhouwan National Laboratory, Sanya, China  
 ² State Key Laboratory of Black Soils Conservation and Utilization, Chinese Academy of Sciences, Changchun, China  
