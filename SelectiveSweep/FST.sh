@@ -1,3 +1,8 @@
+F<sub>ST</sub> Genome Scan Workflow
+
+This workflow describes how to identify genomic regions under selection using windowed F<sub>ST</sub> statistics, standardization, and candidate gene extraction.
+Dependencies: vcftools, awk, grep, sed, sort, python (zscore.py), GetGeneFromGFF.py.
+
 #Only part was shown as an example
 nohup vcftools --vcf 8917.snp.filter.maf0.01.int0.7.clean.beagle.vcf --weir-fst-pop zhongguo_all_cultivar.list --weir-fst-pop baxi_cultivar.list --out zhongguoallvsbaxi --fst-window-size 100000 --fst-window-step 10000 &
 
